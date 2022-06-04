@@ -1,0 +1,8 @@
+.square_input {
+  font-size: 3.5em;
+  text-align: center;
+  height: 80px;
+  width: 80px;
+  margin: 0.15em;
+  background-color: rgb(209, 209, 235);
+}

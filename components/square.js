@@ -1,8 +1,17 @@
-//import styles from "../styles/square.module.css";
+import styles from "../styles/square.module.css";
 
-const Square = () => {
+const Square = ({ i, j, handleInputChange }) => {
+  const handleInputChangeHelper = (event) => {
+    handleInputChange(i, j, event.target.value);
+  };
+
   return (
-    <input style={{ height: 50, width: 50, backgroundColor: "blue" }}></input>
+    <input
+      className={styles.square_input}
+      maxLength={1}
+      type="text"
+      onChange={handleInputChangeHelper}
+    ></input>
   );
 };
 
